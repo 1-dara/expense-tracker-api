@@ -27,10 +27,15 @@ const swaggerOptions = {
         },
         servers: [
             {
-                url: 'http://localhost:3000',
+                url: 'https://expense-tracker-api-cfo5.onrender.com',
+                description: 'Production server',
+            },
+            {
+                url: 'http://localhost:3001',
                 description: 'Local server',
             },
         ],
+
         components: {
             securitySchemes: {
                 bearerAuth: {
