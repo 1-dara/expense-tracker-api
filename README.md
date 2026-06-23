@@ -2,7 +2,7 @@
 
 A personal finance tracking REST API built with **TypeScript**, **Node.js**, **Express**, and **MongoDB**. Deployed and live.
 
- **Live API Docs:** https://expense-tracker-api-cfo5.onrender.com
+ **Live API Docs:** https://expense-tracker-api-cfo5.onrender.com/docs
  **GitHub:** <https://github.com/1-dara/expense-tracker-api>
 
 -----
