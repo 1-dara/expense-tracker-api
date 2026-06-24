@@ -53,10 +53,7 @@ const swaggerDocs = swaggerJsdoc(swaggerOptions);
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.get('/', (req, res) => {
-    res.json({
-        message: 'Expense Tracker API is running',
-        docs: '/docs'
-    });
+    res.redirect('/docs');
 });
 
 app.use('/api/auth', authRoutes);
