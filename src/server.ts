@@ -7,9 +7,11 @@ import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
 import authRoutes from './routes/authRoutes.js';
 import expenseRoutes from './routes/expenseRoutes.js';
+import cors from 'cors';
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI as string)
